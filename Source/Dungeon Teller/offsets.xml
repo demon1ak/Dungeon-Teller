@@ -14,8 +14,8 @@
     <TimeWaited>0x4C</TimeWaited>
   </bgQueueStats>
   <dbc>
-    <LfgDungeons rebased="false">0x1086C94</LfgDungeons>
-    <BattleMasterList rebased="true">0xC850E8</BattleMasterList>
-    <Map rebased="true">0xC89034</Map>
+    <LfgDungeons rebased="true">0xC8BED4</LfgDungeons>
+    <BattleMasterList rebased="true">0xC8A328</BattleMasterList>
+    <Map rebased="true">0xC8E004</Map>
   </dbc>
 </offsets>
