@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <offsets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <playerName rebased="true">0xEC3180</playerName>
-  <playerRealm rebased="true">0xEC3326</playerRealm>
-  <lfgQueueStats rebased="true">0xE07E40</lfgQueueStats>
-  <lfgProposal rebased="true">0xE07F18</lfgProposal>
+  <playerName rebased="true">0xEC4668</playerName>
+  <playerRealm rebased="true">0xEC480E</playerRealm>
+  <lfgQueueStats rebased="true">0xE09328</lfgQueueStats>
+  <lfgProposal rebased="true">0xE09400</lfgProposal>
   <bgQueueStats>
-    <BasePtr rebased="true">0xB62104</BasePtr>
+    <BasePtr rebased="true">0xB6335C</BasePtr>
     <NextPtr>0x4</NextPtr>
     <BattleMasterListIdPtr>0x28</BattleMasterListIdPtr>
     <MapId>0x30</MapId>
