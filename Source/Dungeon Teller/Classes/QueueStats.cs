@@ -140,9 +140,11 @@ namespace Dungeon_Teller.Classes
 					int bml_id = Memory.Read<int>(bgQueueCur + Offsets.bgQueueStats.BattleMasterListIdPtr.val);
 					bgQueue.battlefieldName = BattleMasterList[bml_id].BattlefieldName;
                     bgQueue.battlefieldID = bml_id;
-
-                    bgQueue.battlefieldName = Forms.ProcessSelector.BattlefieldIDs[bgQueue.battlefieldID];
-
+                    try
+                    {
+                        bgQueue.battlefieldName = Forms.ProcessSelector.BattlefieldIDs[bgQueue.battlefieldID];
+                    }
+                    catch (Exception ex) {bgQueue.battlefieldName ="N/A"; }
 				}
 				else
 				{
