@@ -1,343 +1,140 @@
-1,Wailing Caverns
-2,Scholomance
-4,Ragefire Chasm
-6,Deadmines
-8,Shadowfang Keep
-10,Blackfathom Deeps
-12,Stormwind Stockade
-14,Gnomeregan
-16,Razorfen Kraul
-20,Razorfen Downs
-22,Uldaman
-24,Zul'Farrak
-26,Maraudon - Foulspore Cavern
-28,Sunken Temple
-30,Blackrock Depths - Detention Block
-32,Lower Blackrock Spire
-34,Dire Maul - Warpwood Quarter
-36,Dire Maul - Capital Gardens
-38,Dire Maul - Gordok Commons
-40,Stratholme - Main Gate
-46,Onyxia's Lair
-48,Molten Core
-50,Blackwing Lair
-58,Elwynn Forest
-60,Westfall
-62,Duskwood
-64,Dun Morogh
-66,Loch Modan
-68,Wetlands
-70,Stranglethorn Vale
-72,Blasted Lands
-74,Swamp of Sorrows
-76,Redridge Mountains
-78,Burning Steppes
-80,Searing Gorge
-82,Badlands
-84,Arathi Highlands
-86,Hillsbrad Foothills
-88,Hinterlands
-90,Western Plaguelands
-92,Eastern Plaguelands
-94,Tirisfal Glades
-96,Silverpine Forest
-98,Alterac Mountains
-100,Durotar
-102,Mulgore
-104,The Barrens
-106,Stonetalon Mountains
-108,Thousand Needles
-110,Desolace
-112,Feralas
-114,Dustwallow Marsh
-116,Tanaris
-118,Un'Goro Crater
-120,Silithus
-122,Teldrassil
-124,Darkshore
-126,Ashenvale
-128,Felwood
-130,Azshara
-132,Winterspring
-136,Hellfire Ramparts
-137,Blood Furnace
-138,Shattered Halls
-140,Slave Pens
-146,Underbog
-147,The Steamvault
-148,Mana-Tombs
-149,Auchenai Crypts
-150,Sethekk Halls
-151,Shadow Labyrinth
-152,Hellfire Peninsula
-153,Zangarmarsh
-154,Terokkar Forest
-155,Nagrand
-156,Shadowmoon Valley
-157,Blade's Edge Mountains
-158,Netherstorm
-159,Naxxramas
-160,Ahn'Qiraj Ruins
-161,Ahn'Qiraj Temple
-163,Scarlet Halls
-164,Scarlet Monastery
-166,Eversong Woods
-167,Azuremyst Isle
-168,Ghostlands
-169,Bloodmyst Isle
-170,The Escape From Durnholde
-171,Opening of the Dark Portal
-172,The Mechanar
-173,The Botanica
-174,The Arcatraz
-175,Karazhan
-176,Magtheridon's Lair
-177,Gruul's Lair
-178,Auchenai Crypts
-179,Mana-Tombs
-180,Sethekk Halls
-181,Shadow Labyrinth
-182,Opening of the Dark Portal
-183,The Escape From Durnholde
-184,Slave Pens
-185,The Steamvault
-186,Underbog
-187,Blood Furnace
-188,Hellfire Ramparts
-189,Shattered Halls
-190,The Arcatraz
-191,The Botanica
-192,The Mechanar
-193,Tempest Keep
-194,Serpentshrine Cavern
-195,Hyjal Past
-196,Black Temple
-198,Magisters' Terrace
-199,The Sunwell
-200,Isle of Quel'Danas
-201,Magisters' Terrace
-202,Utgarde Keep
-203,Utgarde Pinnacle
-204,Azjol-Nerub
-205,Utgarde Pinnacle
-206,The Oculus
-207,Halls of Lightning
-208,Halls of Stone
-209,The Culling of Stratholme
-210,The Culling of Stratholme
-211,The Oculus
-212,Halls of Lightning
-213,Halls of Stone
-214,Drak'Tharon Keep
-215,Drak'Tharon Keep
-216,Gundrak
-217,Gundrak
-218,Ahn'kahet: The Old Kingdom
-219,Ahn'kahet: The Old Kingdom
-220,Violet Hold
-221,Violet Hold
-223,The Eye of Eternity
-224,The Obsidian Sanctum
-225,The Nexus
-226,The Nexus
-227,Naxxramas
-228,Borean Tundra
-229,Howling Fjord
-230,Grizzly Hills
-231,Dragonblight
-232,Wintergrasp
-233,Zul'Drak
-234,Sholazar Basin
-235,The Storm Peaks
-236,Icecrown
-237,The Eye of Eternity
-238,The Obsidian Sanctum
-239,Vault of Archavon
-240,Vault of Archavon
-241,Azjol-Nerub
-242,Utgarde Keep
-243,Ulduar
-244,Ulduar
-245,Trial of the Champion
-246,Trial of the Crusader
-247,Trial of the Grand Crusader
-248,Trial of the Crusader
-249,Trial of the Champion
-250,Trial of the Grand Crusader
-251,The Forge of Souls
-252,The Forge of Souls
-253,Pit of Saron
-254,Pit of Saron
-255,Halls of Reflection
-256,Halls of Reflection
-257,Onyxia's Lair
-258,Random Classic Dungeon
-259,Random Burning Crusade Dungeon
-260,Random Burning Crusade Heroic
-261,Random Lich King Dungeon
-262,Random Lich King Heroic
-272,Maraudon - The Wicked Grotto
-273,Maraudon - Earth Song Falls
-274,Stratholme - Service Entrance
-276,Blackrock Depths - Upper City
-279,Icecrown Citadel
-280,Icecrown Citadel
-285,The Headless Horseman
-286,The Frost Lord Ahune
-287,Coren Direbrew
-288,The Crown Chemical Co.
-293,Ruby Sanctum
-294,Ruby Sanctum
-296,Grand Ambassador Flamelash
-297,Crown Princess Theradras
-298,Kai'ju Gahz'rilla
-299,Prince Sarsarun
-300,Random Cataclysm Dungeon
-301,Random Cataclysm Heroic
-302,Throne of the Tides
-303,Blackrock Caverns
-304,Grim Batol
-305,Halls of Origination
-306,Kai'ju Gahz'rilla
-307,The Stonecore
-308,Grand Ambassador Flamelash
-309,Crown Princess Theradras
-310,Prince Sarsarun
-311,The Vortex Pinnacle
-312,Lost City of the Tol'vir
-313,Blackwing Descent
-314,Blackwing Descent
-315,The Bastion of Twilight
-316,The Bastion of Twilight
-317,Throne of the Four Winds
-318,Throne of the Four Winds
-319,The Vortex Pinnacle
-320,The Stonecore
-321,Halls of Origination
-322,Grim Batol
-323,Blackrock Caverns
-324,Throne of the Tides
-325,Lost City of the Tol'vir
-326,Deadmines
-327,Shadowfang Keep
-328,Baradin Hold
-329,Baradin Hold
-330,Upper Blackrock Spire
-334,Zul'Gurub
-340,Zul'Aman
-358,10v10 Rated Battleground
-361,Firelands
-362,Firelands
-416,The Siege of Wyrmrest Temple
-417,Fall of Deathwing
-434,Random Hour of Twilight Heroic
-435,End Time
-437,Well of Eternity
-439,Hour of Twilight
-447,Dragon Soul
-448,Dragon Soul
-462,Random Mists of Pandaria Heroic
-463,Random Mists of Pandaria Dungeon
-464,Temple of the Jade Serpent
-465,Stormstout Brewery
-466,Shado-Pan Monastery
-467,Mogu'shan Palace
-468,Temple of the Jade Serpent
-469,Stormstout Brewery
-470,Shado-Pan Monastery
-471,Gate of the Setting Sun
-472,Scholomance
-473,Scarlet Halls
-474,Scarlet Monastery
-492,Greenstone Village
-493,Random Mists of Pandaria Scenario
-499,Unga Ingoo
-504,Crypt of Forgotten Kings
-511,Arena of Annihilation
-517,A Brewing Storm
-519,Mogu'shan Palace
-526,Terrace of Endless Spring
-527,Guardians of Mogu'shan
-528,The Vault of Mysteries
-529,The Dread Approach
-530,Nightmare of Shek'zeer
-531,Mogu'shan Vaults
-532,Mogu'shan Vaults
-533,Heart of Fear
-534,Heart of Fear
-535,Terrace of Endless Spring
-536,Terrace of Endless Spring
-537,Assault on Zan'vess
-539,Brewmoon Festival
-540,Temple of Kotmogu
-541,Test Scenario PS
-542,Theramore's Fall
-543,Theramore's Fall
-554,Siege of Niuzao Temple
-566,Theramore's Fall
-567,Theramore's Fall
-586,Dagger in the Dark
-588,Battle on the High Seas
-589,A Little Patience
-590,Lion's Landing
-593,Assault on Zan'vess
-594,Pursuing the Black Harvest
-595,Domination Point
-602,Tear Down This Wall!
-603,Stormsea Landing
-604,Assault on Zeb'tula
-606,To the Skies!
-607,The Fall of Shan Bu
-608,Tear Down This Wall!
-610,Last Stand of the Zandalari
-611,Forgotten Depths
-612,Halls of Flesh-Shaping
-613,Pinnacle of Storms
-615,The Thunder Forge
-616,Dagger in the Dark
-617,Assault on Shaol'mara
-618,To the Skies!
-619,A Little Patience
-620,Troves of the Thunder King
-621,The Fall of Shan Bu
-624,Dark Heart of Pandaria
-625,The Secrets of Ragefire
-630,Siege of Niuzao Temple
-631,Gate of the Setting Sun
-633,Throne of Thunder
-634,Throne of Thunder
-637,Blood in the Snow
-639,A Brewing Storm
-640,Proving Grounds: White Tiger Temple
-641,Random Mists of Pandaria Heroic Scenario
-645,Greenstone Village
-646,Blood in the Snow
-647,Dark Heart of Pandaria
-648,Crypt of Forgotten Kings
-649,The Secrets of Ragefire
-652,Battle on the High Seas
-654,Battle on the High Seas
-655,Battle on the High Seas
-658,Proving Grounds
-697,Prototype Scenario
-699,Crafty Test
-701,Celestial Tournament
-714,Siege of Orgrimmar
-715,Siege of Orgrimmar
-716,Vale of Eternal Sorrows
-717,Gates of Retribution
-724,The Underhold
-725,Downfall
-726,Vale of Eternal Sorrows
-728,Gates of Retribution
-729,The Underhold
-730,Downfall
-745,Finding the Secret Ingredient
-749,Noodle Time
-766,Siege of Orgrimmar
-767,Ordos
-768,Celestials
-771,Vale of Eternal Sorrows
-772,Gates of Retribution
-773,The Underhold
-774,Downfall
+0,Eastern Kingdoms
+1,Kalimdor
+530,Outlands {{bc-inline}}
+571,Northrend {{wotlk-inline}}
+646,Deepholm {{cata-inline}}
+870,Pandaria {{mop-inline}}
+1064,Mogu Island Daily Area (Isle of Thunder) {{mop-inline}}
+1116,Draenor {{wod-inline}}
+1265,Tanaan Jungle Intro {{wod-inline}}
+562,Blade's Edge Arena
+617,Dalaran Arena
+559,Nagrand Arena
+572,Ruins of Lordaeron
+618,The Ring of Valor
+1134,The Tiger's Peak
+980,Tol'Viron Arena
+30,Alterac Valley
+529,Arathi Basin
+566,Eye of the Storm
+628,Isle of Conquest
+607,Strand of the Ancients
+761,The Battle for Gilneas
+726,Twin Peaks
+489,Warsong Gulch
+1152,FW Horde Garrison Level 1
+1330,FW Horde Garrison Level 2
+1153,FW Horde Garrison Level 3
+1154,FW Horde Garrison Level 4
+1158,SMV Alliance Garrison Level 1
+1331,SMV Alliance Garrison Level 2
+1159,SMV Alliance Garrison Level 3
+1160,SMV Alliance Garrison Level 4
+48,Blackfathom Deeps
+230,Blackrock Depths
+229,Blackrock Spire
+429,Dire Maul
+90,Gnomeregan
+349,Maraudon
+389,Ragefire Chasm
+129,Razorfen Downs
+47,Razorfen Kraul
+1004,Scarlet Monastery
+1007,Scholomance
+33,Shadowfang Keep
+329,Stratholme
+36,The Deadmines
+34,The Stockade
+109,The Temple of Atal'Hakkar
+70,Uldaman
+43,Wailing Caverns
+209,Zul'Farrak
+469,Blackwing Lair
+409,Molten Core
+509,Ruins of Ahn'Qiraj
+531,Temple of Ahn'Qiraj
+558,Auchenai Crypts
+543,Hellfire Ramparts
+585,Magisters' Terrace
+557,Mana-Tombs
+560,Old Hillsbrad Foothills
+556,Sethekk Halls
+555,Shadow Labyrinth
+552,The Arcatraz
+269,The Black Morass
+542,The Blood Furnace
+553,The Botanica
+554,The Mechanar
+540,The Shattered Halls
+547,The Slave Pens
+545,The Steamvault
+546,The Underbog
+564,Black Temple
+565,Gruul's Lair
+534,Hyjal Summit
+532,Karazhan
+544,Magtheridon's Lair
+548,Serpentshrine Cavern
+580,Sunwell Plateau
+550,The Eye
+619,Ahn'kahet: The Old Kingdom
+601,Azjol-Nerub
+600,Drak'Tharon Keep
+604,Gundrak
+602,Halls of Lightning
+668,Halls of Reflection
+599,Halls of Stone
+658,Pit of Saron
+595,The Culling of Stratholme
+632,The Forge of Souls
+576,The Nexus
+578,The Oculus
+608,The Violet Hold
+650,Trial of the Champion
+574,Utgarde Keep
+575,Utgarde Pinnacle
+533,Naxxramas
+249,Onyxia's Lair
+616,The Eye of Eternity
+615,The Obsidian Sanctum
+724,The Ruby Sanctum
+649,Trial of the Crusader
+603,Ulduar
+624,Vault of Archavon
+938,End Time
+670,Grim Batol
+940,Hour of Twilight
+755,Lost City of the Tol'vir
+725,The Stonecore
+657,The Vortex Pinnacle
+643,Throne of the Tides
+939,Well of Eternity
+568,Zul'Aman
+859,Zul'Gurub
+757,Baradin Hold
+669,Blackwing Descent
+967,Dragon Soul
+720,Firelands
+671,The Bastion of Twilight
+754,Throne of the Four Winds
+962,Gate of the Setting Sun {{mop-inline}}
+994,Mogu'Shan Palace {{mop-inline}}
+959,Shado-pan Monastery {{mop-inline}}
+1011,Siege of Niuzao Temple {{mop-inline}}
+961,Stormstout Brewery {{mop-inline}}
+960,Temple of the Jade Serpent {{mop-inline}}
+1009,Heart of Fear {{mop-inline}}
+1008,Mogu'shan Vaults {{mop-inline}}
+1136,Siege of Orgrimmar {{mop-inline}}
+996,Terrace of Endless Spring {{mop-inline}}
+1098,Throne of Thunder {{mop-inline}}
+1182,Auchindoun {{wod-inline}}
+1175,Bloodmaul Slag Mines {{wod-inline}}
+1208,Grimrail Depot {{wod-inline}}
+1195,Iron Docks {{wod-inline}}
+1176,Shadowmoon Burial Grounds {{wod-inline}}
+1209,Skyreach {{wod-inline}}
+1279,The Everbloom {{wod-inline}}
+1358,Upper Blackrock Spire {{wod-inline}}
+1228,Highmaul {{wod-inline}}
+1205,Blackrock Foundry {{wod-inline}}

@@ -11,6 +11,7 @@ namespace Dungeon_Teller.Classes
 			LfgDungeons = new DBC<LfgDungeonsRec>(new IntPtr(Offsets.dbc.LfgDungeons.val));
 			BattleMasterList = new DBC<BattleMasterListRec>(new IntPtr(Offsets.dbc.BattleMasterList.val));
 			Map = new DBC<MapRec>(new IntPtr(Offsets.dbc.Map.val));
+
 		}
 
 		public static DBC<LfgDungeonsRec> LfgDungeons;
@@ -47,7 +48,7 @@ namespace Dungeon_Teller.Classes
 		{
             [FieldOffset(0)]
             public uint m_id; //Possibly useful
-			[FieldOffset(52)]
+            [FieldOffset(16)]
 			public uint _battlefieldName; //Issues
 
 			public string BattlefieldName
@@ -94,7 +95,7 @@ namespace Dungeon_Teller.Classes
 			public int totalHealers;
 			[FieldOffset(80)]
 			public int totalDPS;
-			[FieldOffset(88)]
+			[FieldOffset(100)]
 			public int m_category; //1=Dungeon;2=Raid;3=Scenario(need impl)
 
 			public string DungeonName
@@ -139,6 +140,9 @@ namespace Dungeon_Teller.Classes
 					int bml_id = Memory.Read<int>(bgQueueCur + Offsets.bgQueueStats.BattleMasterListIdPtr.val);
 					bgQueue.battlefieldName = BattleMasterList[bml_id].BattlefieldName;
                     bgQueue.battlefieldID = bml_id;
+
+                    bgQueue.battlefieldName = Forms.ProcessSelector.BattlefieldIDs[bgQueue.battlefieldID];
+
 				}
 				else
 				{

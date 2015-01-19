@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <offsets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <playerName rebased="true">0xEC3180</playerName>
-  <playerRealm rebased="true">0xEC3326</playerRealm>
-  <lfgQueueStats rebased="true">0xE07E40</lfgQueueStats>
-  <lfgProposal rebased="true">0xE07F18</lfgProposal>
+  <playerName rebased="false">0xed5cd0
+</playerName>
+  <playerRealm rebased="false">0xED5CB4</playerRealm>
+  <lfgQueueStats rebased="false">0xE07E40</lfgQueueStats>
+  <lfgProposal rebased="false">0xE07F18</lfgProposal>
   <bgQueueStats>
-    <BasePtr rebased="true">0xB62104</BasePtr>
+    <BasePtr rebased="false">0xB62104</BasePtr>
     <NextPtr>0x4</NextPtr>
     <BattleMasterListIdPtr>0x28</BattleMasterListIdPtr>
     <MapId>0x30</MapId>
@@ -14,8 +15,8 @@
     <TimeWaited>0x4C</TimeWaited>
   </bgQueueStats>
   <dbc>
-    <LfgDungeons rebased="false">0x1086C94</LfgDungeons>
-    <BattleMasterList rebased="true">0xC850E8</BattleMasterList>
-    <Map rebased="true">0xC89034</Map>
+    <LfgDungeons rebased="false">0xC8B708</LfgDungeons>
+    <BattleMasterList rebased="false">0xC8977C</BattleMasterList>
+    <Map rebased="true">0xC8E430</Map>
   </dbc>
 </offsets>

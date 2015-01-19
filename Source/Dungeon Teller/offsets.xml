@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <offsets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <playerName rebased="true">0xEC4668</playerName>
-  <playerRealm rebased="true">0xEC480E</playerRealm>
-  <lfgQueueStats rebased="true">0xE09328</lfgQueueStats>
-  <lfgProposal rebased="true">0xE09400</lfgProposal>
+  <playerName rebased="true">0xed5cd0</playerName>
+  <playerRealm rebased="true">0xed5e7e</playerRealm>
+  <lfgQueueStats rebased="true">0xe3b630</lfgQueueStats>
+  <lfgProposal rebased="true">0xe3b710</lfgProposal>
   <bgQueueStats>
-    <BasePtr rebased="true">0xB6335C</BasePtr>
+    <BasePtr rebased="true">0xbb7e0c</BasePtr>
     <NextPtr>0x4</NextPtr>
-    <BattleMasterListIdPtr>0x28</BattleMasterListIdPtr>
+    <BattleMasterListIdPtr>0x30</BattleMasterListIdPtr>
     <MapId>0x30</MapId>
-    <Status>0x34</Status>
-    <EstimatedWait>0x48</EstimatedWait>
-    <TimeWaited>0x4C</TimeWaited>
+    <Status>0x3c</Status>
+    <EstimatedWait>0x50</EstimatedWait>
+    <TimeWaited>0x54</TimeWaited>
   </bgQueueStats>
   <dbc>
-    <LfgDungeons rebased="true">0xC8BED4</LfgDungeons>
-    <BattleMasterList rebased="true">0xC8A328</BattleMasterList>
-    <Map rebased="true">0xC8E004</Map>
+    <LfgDungeons rebased="true">0xc8b708</LfgDungeons>
+    <BattleMasterList rebased="true">0xc8977c</BattleMasterList>
+    <Map rebased="true">0xc8c094</Map>
   </dbc>
 </offsets>

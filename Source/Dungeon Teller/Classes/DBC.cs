@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.Runtime.InteropServices;
 
 namespace Dungeon_Teller.Classes
-{
+{   
+   
+
 	[StructLayout(LayoutKind.Sequential)]
 	struct WoWClientDB
 	{
@@ -11,10 +13,10 @@ namespace Dungeon_Teller.Classes
 		public int NumRows;         // number of rows
 		public int MaxIndex;        // maximal row index
 		public int MinIndex;        // minimal row index
-		public IntPtr Data;           // pointer to actual dbc file data
+        public IntPtr Unk1; // ptr
+        public IntPtr Data;           // pointer to actual dbc file data
 		public IntPtr FirstRow;       // pointer to first row
 		public IntPtr Rows;           // pointer to rows array - not anymore?
-		public IntPtr Unk1; // ptr
 		public uint Unk2; // 1
 		public IntPtr Unk3; // ptr
 		public uint RowEntrySize; // 2 or 4
@@ -31,8 +33,10 @@ namespace Dungeon_Teller.Classes
 	}
 
 	class DBC<T> : IEnumerable<T> where T : struct
-	{
-		private readonly WoWClientDB m_dbInfo;
+	{   
+		
+        
+        private readonly WoWClientDB m_dbInfo;
 		private readonly DBCFile m_fileHdr;
 
 		public int MinIndex { get { return m_dbInfo.MinIndex; } }

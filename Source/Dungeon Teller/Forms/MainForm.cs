@@ -231,15 +231,30 @@ namespace Dungeon_Teller.Forms
 		{
 			int category = QueueStats.LfgDungeons[PveQueueReadyStatus].m_category;
             int id = QueueStats.LfgDungeons[PveQueueReadyStatus].m_ID;
+
+            int i = 0;
+            foreach (var row in QueueStats.LfgDungeons)
+            {
+                if (i++ == PveQueueReadyStatus)
+                {
+                    id = row.m_ID;
+                    category = row.m_category;
+                }            
+            }
+            
             string name = "";
             if (id != 0)
             {
-                name = Forms.ProcessSelector.DungeonIDs[id]; //Eurgh...
+                try
+                {
+                    name = Forms.ProcessSelector.DungeonIDs[id]; //Eurgh...
+                }
+                catch (Exception ex) { }
             }
             else
-            {
+           {
                 name = "Unknown Dungeon";
-            }
+           }
 
 			if (category == 1 && id != 0)
 			{
@@ -251,6 +266,11 @@ namespace Dungeon_Teller.Forms
 				timerLfrRefresh.Stop();
 				QueueStatus_IsReady("Raid Finder", name);
 			}
+            else if (category == 3 && id != 0)
+            {
+                timerLfrRefresh.Stop();
+                QueueStatus_IsReady("Random Dungeon", name);
+            }
 			else
 			{
 				queueReady = false;
@@ -273,15 +293,15 @@ namespace Dungeon_Teller.Forms
 		private void Pvp1QueueStatus_Changed()
 		{
 			string name = bg1Queue.battlefieldName;
-            uint id = QueueStats.BattleMasterList[Pvp1QueueStatus].m_id;
-            if (id != 0)
-            {
-                name = Forms.ProcessSelector.BattlefieldIDs[(int)id];
-            }
-            else
-            {
-                name = "Could not get Battlefield name";
-            }
+            //uint id = QueueStats.BattleMasterList[Pvp1QueueStatus].m_id;
+            //if (id != 0)
+            //{
+            //    name = Forms.ProcessSelector.BattlefieldIDs[(int)id];
+            //}
+            //else
+            //{
+            //    name = "Could not get Battlefield name";
+            //}
 			if (Pvp1QueueStatus < 1)
 			{
 				gb_bg1.Hide();
@@ -401,6 +421,12 @@ namespace Dungeon_Teller.Forms
 					module = bg2Module;
 					img = Properties.Resources.pvp_finder_icon;
 					break;
+                case "Random Dungeon":
+                    pve = true;
+                    resetLFD = true;
+                    module = lfdModule;
+                    img = Properties.Resources.dungeon_finder_icon;
+                    break;
 			}
 
 			Helper.setReady(module, mapName);

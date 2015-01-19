@@ -113,15 +113,15 @@ namespace Dungeon_Teller.Classes
 		{
 			int estimatedWait = queue.estimatedWait / 1000;
 			int queuedTime = (System.Environment.TickCount - queue.timeWaited) / 1000;
-            string bname = "";
-            try
-            {
-                bname = Forms.ProcessSelector.BattlefieldIDs[queue.battlefieldID];
-            }
-            catch (Exception ex)
-            {
-                bname = "Couldn't Get Dungeon Name";
-            }
+            string bname =queue.battlefieldName;
+            //try
+            //{
+            //    bname = Forms.ProcessSelector.BattlefieldIDs[queue.battlefieldID];
+            //}
+            //catch (Exception ex)
+            //{
+            //    bname = "Couldn't Get Dungeon Name";
+            //}
 			module.lbl_Status.Text = String.Format("{0} (queued)", bname);
 
 			if (estimatedWait != 0)

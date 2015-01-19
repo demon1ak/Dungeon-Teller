@@ -10,7 +10,7 @@ namespace Dungeon_Teller.Classes
 	class Memory
 	{
 		private const int DEFAULT_MEMORY_SIZE = 0x1000;
-
+        public const byte ASCII_CHAR_LENGTH = 1;
 		#region Imports
 		[DllImport("kernel32.dll", SetLastError = true), SuppressUnmanagedCodeSecurity]
 		internal static extern bool ReadProcessMemory(IntPtr hProcess, uint lpBaseAddress, [Out] byte[] lpBuffer, int dwSize, out int lpNumberOfBytesRead);
@@ -447,5 +447,72 @@ namespace Dungeon_Teller.Classes
 			public const uint MEM_RELEASE = 0x8000;
 		}
 		#endregion
-	}
+
+
+        public static string ReadAsciiString(uint dwAddress, int nLength)
+        {
+            IntPtr lpBuffer = IntPtr.Zero;
+            int iBytesRead, nSize;
+            string sRet;
+
+            try
+            {
+                nSize = nLength * ASCII_CHAR_LENGTH;
+                lpBuffer = Marshal.AllocHGlobal(nSize + ASCII_CHAR_LENGTH);
+                Marshal.WriteByte(lpBuffer, nLength, 0);
+
+                iBytesRead = ReadRawMemory(ProcessHandle, dwAddress, lpBuffer, nSize);
+                if (iBytesRead != nSize)
+                    throw new Exception();
+
+                sRet = Marshal.PtrToStringAnsi(lpBuffer);
+            }
+            catch
+            {
+                return String.Empty;
+            }
+            finally
+            {
+                if (lpBuffer != IntPtr.Zero)
+                    Marshal.FreeHGlobal(lpBuffer);
+            }
+
+            return sRet;
+        }
+
+
+        /// <summary>
+        ///   Reads Memory from an external process into a buffer of allocated Memory in the local process.
+        /// </summary>
+        /// <param name = "hProcess">Handle to the external process from which Memory will be read.</param>
+        /// <param name = "dwAddress">Address in external process from which Memory will be read.</param>
+        /// <param name = "lpBuffer">Pointer to a buffer of allocated Memory of at least nSize bytes.</param>
+        /// <param name = "nSize">Number of bytes to be read.</param>
+        /// <returns>Returns the number of bytes actually read.</returns>
+        public static int ReadRawMemory(IntPtr hProcess, uint dwAddress, IntPtr lpBuffer, int nSize)
+        {
+            try
+            {
+                int lpBytesRead;
+                if (!ReadProcessMemory(hProcess, dwAddress, lpBuffer, nSize, out lpBytesRead))
+                    throw new Exception("ReadProcessMemory failed");
+
+                return lpBytesRead;
+            }
+            catch
+            {
+                return 0;
+            }
+        }
+
+        [DllImport("kernel32", EntryPoint = "ReadProcessMemory")]
+        public static extern bool ReadProcessMemory(
+            IntPtr hProcess,
+            uint dwAddress,
+            IntPtr lpBuffer,
+            int nSize,
+            out int lpBytesRead);
+
+
+    }
 }

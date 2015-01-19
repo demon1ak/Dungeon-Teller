@@ -77,8 +77,10 @@ namespace Dungeon_Teller.Forms
 		private bool attachToProcess(int pid)
 		{
 			Memory.OpenProcess(pid);
-			string playerName = Memory.Read<string>(Memory.BaseAddress + Offsets.playerName.val);
-			string playerRealm = Memory.Read<string>(Memory.BaseAddress + Offsets.playerRealm.val);
+
+            string playerName = "N/A";
+            string playerRealm = "N/A";
+
 			if (playerName.Length != 0 && playerRealm.Length != 0)
 			{
 				return true;
