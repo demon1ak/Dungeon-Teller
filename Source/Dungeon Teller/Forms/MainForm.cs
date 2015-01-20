@@ -235,7 +235,7 @@ namespace Dungeon_Teller.Forms
             int i = 0;
             foreach (var row in QueueStats.LfgDungeons)
             {
-                if (i++ == PveQueueReadyStatus)
+                if (row.m_ID == PveQueueReadyStatus)
                 {
                     id = row.m_ID;
                     category = row.m_category;
