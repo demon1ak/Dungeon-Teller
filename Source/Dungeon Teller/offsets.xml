@@ -8,7 +8,7 @@
     <BasePtr rebased="true">0xbb7e0c</BasePtr>
     <NextPtr>0x4</NextPtr>
     <BattleMasterListIdPtr>0x30</BattleMasterListIdPtr>
-    <MapId>0x30</MapId>
+    <MapId>0x38</MapId>
     <Status>0x3c</Status>
     <EstimatedWait>0x50</EstimatedWait>
     <TimeWaited>0x54</TimeWaited>
