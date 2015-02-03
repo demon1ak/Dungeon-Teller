@@ -295,7 +295,7 @@ namespace Dungeon_Teller.Forms
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Process.Start("https://github.com/demon1ak/mqtt-android2.2-froyo-dungeonteller.git");
+            Process.Start("https://github.com/demon1ak/mqtt-android2.2-froyo-dungeonteller/releases/download/0.0.0.1/dungeonteller.tgz");
         }
 	}
 }
