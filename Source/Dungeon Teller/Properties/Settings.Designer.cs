@@ -26,18 +26,6 @@ namespace Dungeon_Teller.Properties {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("False")]
-        public bool AntiAFK {
-            get {
-                return ((bool)(this["AntiAFK"]));
-            }
-            set {
-                this["AntiAFK"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("False")]
         public bool AutoJoin {
             get {
                 return ((bool)(this["AutoJoin"]));
@@ -308,6 +296,30 @@ namespace Dungeon_Teller.Properties {
             }
             set {
                 this["UpdateXML"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool UseMQTT {
+            get {
+                return ((bool)(this["UseMQTT"]));
+            }
+            set {
+                this["UseMQTT"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool AntiAFK {
+            get {
+                return ((bool)(this["AntiAFK"]));
+            }
+            set {
+                this["AntiAFK"] = value;
             }
         }
     }

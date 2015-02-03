@@ -461,12 +461,26 @@ namespace Dungeon_Teller.Forms
 				ShowWindow(hWnd_wow, SW_RESTORE);
 			}
 
+            if (settings.UseMQTT)
+            {
+                try
+                {
+                    MQTT.send(queueReadyName + " - " + mapName);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(String.Format("Unexpected MQTT error : {0}", ex.InnerException), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+
 			if (settings.DesktopNotification)
 			{
 				if (!notification.Visible)
 				{
-					DialogResult result = notification.ShowDialog(new DesktopNotification.costumArguments(img, queueReadyName, mapName));
+                    
 
+					DialogResult result = notification.ShowDialog(new DesktopNotification.costumArguments(img, queueReadyName, mapName));
+                  
 					if (result == DialogResult.OK)
 					{
 						SetForegroundWindow(hWnd_wow);
@@ -475,6 +489,9 @@ namespace Dungeon_Teller.Forms
 				}
 
 			}
+
+           
+
 			if (settings.PushProider != 0)
 			{
 				Notification.sendPushNotification(settings.PushProider, settings.PushKey, "Queue ready!", String.Format("Your {0} queue is now ready!", queueReadyName));
@@ -597,9 +614,9 @@ namespace Dungeon_Teller.Forms
 			{
                 //Hm - I think I broke something as this keeps erroring whenever I get a LFGProposal - It's silly to exit the 
                 //app on a non-fatal error though, so I disabled it.
-				//memoryScanner.Stop();
+				
 				//MessageBox.Show(String.Format("Unexpected Error: {0}", ep.InnerException), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-				//Application.Exit();
+				
 			}
 		}
 
@@ -734,7 +751,7 @@ namespace Dungeon_Teller.Forms
 			hWnd_wow = Process.GetProcessById(pid_wow).MainWindowHandle;
 			lnk_attachedTo.Text = String.Format("(attached to PID: {0})", pid_wow);
 
-			checkContributed();
+		    //	checkContributed();
 
 			if (settings.TrayOnly)
 			{

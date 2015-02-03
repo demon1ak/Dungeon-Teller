@@ -44,6 +44,10 @@ namespace Dungeon_Teller.Forms
 				string playerName = Memory.Read<string>(Memory.BaseAddress + Offsets.playerName.val);
 				string playerRealm = Memory.Read<string>(Memory.BaseAddress + Offsets.playerRealm.val);
 
+                MQTT.name = playerName;
+                MQTT.realm = playerRealm;
+
+
 				if (playerName.Length != 0 && playerRealm.Length != 0)
 				{
 					pCount++;

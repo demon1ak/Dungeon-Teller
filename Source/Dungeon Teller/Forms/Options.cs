@@ -105,6 +105,8 @@ namespace Dungeon_Teller.Forms
 				settings.MailNotification = cb_mailNotification.Checked;
 				settings.MailAddress = tb_mailTo.Text;
 
+                settings.UseMQTT = useMQTT.Checked;
+
 				if (settings.LockWindow) main.lockToBottomRight();
 
 				if (settings.TrayOnly)
@@ -289,6 +291,11 @@ namespace Dungeon_Teller.Forms
 			lbl_mailAddress.Enabled = !lbl_mailAddress.Enabled;
 			tb_mailTo.Enabled = !tb_mailTo.Enabled;
 			btn_mailTest.Enabled = !btn_mailTest.Enabled;
-		}
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Process.Start("https://github.com/demon1ak/mqtt-android2.2-froyo-dungeonteller.git");
+        }
 	}
 }

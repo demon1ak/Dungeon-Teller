@@ -2,9 +2,6 @@
 <SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Dungeon_Teller.Properties" GeneratedClassName="Settings">
   <Profiles />
   <Settings>
-    <Setting Name="AntiAFK" Type="System.Boolean" Scope="User">
-      <Value Profile="(Default)">False</Value>
-    </Setting>
     <Setting Name="AutoJoin" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">False</Value>
     </Setting>
@@ -73,6 +70,12 @@
     </Setting>
     <Setting Name="UpdateXML" Type="System.String" Scope="User">
       <Value Profile="(Default)">update.xml</Value>
+    </Setting>
+    <Setting Name="UseMQTT" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="AntiAFK" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
     </Setting>
   </Settings>
 </SettingsFile>

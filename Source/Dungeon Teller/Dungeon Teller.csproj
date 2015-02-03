@@ -80,6 +80,9 @@
     <Reference Include="Ionic.Zip">
       <HintPath>..\References\Ionic.Zip.dll</HintPath>
     </Reference>
+    <Reference Include="M2Mqtt">
+      <HintPath>..\packages\M2Mqtt.4.0\lib\net45\M2Mqtt.dll</HintPath>
+    </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
     <Reference Include="System" />
@@ -101,6 +104,7 @@
     <Compile Include="Classes\DnsLookUp.cs" />
     <Compile Include="Classes\DTModule.cs" />
     <Compile Include="Classes\Helper.cs" />
+    <Compile Include="Classes\MQTT.cs" />
     <Compile Include="Classes\Offsets.cs" />
     <Compile Include="Classes\QueueStats.cs" />
     <Compile Include="Classes\UpdateStarter.cs" />
@@ -200,6 +204,7 @@
       <SubType>Designer</SubType>
     </None>
     <None Include="Dungeon Teller_TemporaryKey.pfx" />
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
