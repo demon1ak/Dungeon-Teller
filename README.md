@@ -1,7 +1,16 @@
-Dungeon Teller - The Second Reboot
+Dungeon Teller - The Third Reboot
 =========
-By Aethereal
+By demon1ak
+
+Credit to  Aethereal
+
+
 ---------
+___
+
+SEE mobile app, should work from android 2.2 + : https://github.com/demon1ak/mqtt-android2.2-froyo-dungeonteller/releases/download/0.0.0.1/dungeonteller.tgz
+
+
 
 
 Dungeon Teller is a simple tool that monitors your dungeon, scenario, raid, battlefield and arena queus in World of Warcraft (WoW).
