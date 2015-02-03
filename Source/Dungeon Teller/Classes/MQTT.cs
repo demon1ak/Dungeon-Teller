@@ -28,7 +28,7 @@ namespace Dungeon_Teller.Classes
             byte[] qosLevels = { MqttMsgBase.QOS_LEVEL_AT_MOST_ONCE};
             client.Subscribe(topics,qosLevels);
 
-            client.Publish(topics[0].ToLower(), Encoding.UTF8.GetBytes(message));
+            client.Publish(topics[0].ToLower().Replace(" ", "_"), Encoding.UTF8.GetBytes(message));
 
         }
 
