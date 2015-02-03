@@ -1,10 +1,14 @@
 Dungeon Teller - The Third Reboot
 =========
 By demon1ak
-Credit to  Aethereal
----------
 
-SEE mobile app : https://github.com/demon1ak/mqtt-android2.2-froyo-dungeonteller/releases/download/0.0.0.1/dungeonteller.tgz
+Credit to  Aethereal
+
+
+---------
+___
+
+SEE mobile app, should work from android 2.2 + : https://github.com/demon1ak/mqtt-android2.2-froyo-dungeonteller/releases/download/0.0.0.1/dungeonteller.tgz
 
 
 
